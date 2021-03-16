@@ -1,6 +1,8 @@
 function calculatBmi(weight, height)
 {
   bmi=weight/(height*height);
-  return Math.round(bmi);
+  return bmi
 }
-console.log(calculatBmi(75,1.65));
+var value=calculatBmi(75,1.8);
+
+console.log(Math.round(value));
