@@ -1,11 +1,24 @@
 function leapyear(year)
 {
-if (year%4==0 && year%400==0)
+if (year%4==0)
 {
-  console.log("Leap year");
+  if(year%100==0)
+  {
+    if(year%400==0)
+    {
+      return "Leap year";
+    }
+    else{
+      return "not leap year";
+    }
+  }
+  else{
+    return "not leap year";
+  }
 }
-else if(year%100==0){
-  console.log("not leap year");
+else{
+  return "not leap year";
 }
 }
-leapyear(2000);
+result=leapyear(2000);
+console.log(result);
