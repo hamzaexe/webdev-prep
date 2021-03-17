@@ -6,15 +6,15 @@ function calculatBmi(weight, height)
   {
     return "your bmi is "+bmi+" you are underweight";
   }
-  if(bmi>=18.5 && bmi<=24.9)
+  else if(bmi>=18.5 && bmi<=24.9)
   {
   return "your bmi is "+bmi+" so you have a normal weight";
   }
-  if(bmi>24.9)
+  else if(bmi>24.9)
   {
     return "your bmi is "+bmi+" so you are over-weight";
   }
 }
-var val=calculatBmi(75,2);
+var val=calculatBmi(85,1.8);
 console.log(val);
 
